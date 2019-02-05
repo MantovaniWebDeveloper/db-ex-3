@@ -25,7 +25,15 @@ WHERE date_of_birth > "1988"\
 \
 /*
 \f1\fs37\fsmilli18667 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Seleziona tutti gli ospiti che hanno pi\'f9 di 20 anni (al momento dell\'92esecuzione della query)
+\outl0\strokewidth0 \strokec2 Seleziona tutti gli ospiti il cui nome inizia con la D
 \f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 */\
 \
-}
+SELECT *\
+FROM ospiti\
+WHERE name LIKE "D%"\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 /*
+\f1\fs37\fsmilli18667 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Calcola il totale degli ordini accepted
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 */}
