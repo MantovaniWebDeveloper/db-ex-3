@@ -57,4 +57,8 @@ where ospite_id IS NOT NULL\
 \
 SELECT SUM(beds)\
 FROM stanze\
+\
+SELECT SUM(price), status\
+FROM pagamenti\
+GROUP BY status\
 }
