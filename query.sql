@@ -44,4 +44,14 @@ where status = "accepted"\
 \
 SELECT  MAX(price)\
 FROM pagamenti\
+\
+SELECT  * \
+FROM ospiti\
+where document_type = "Driver License"\
+and date_of_birth = "1975"\
+\
+\
+SELECT count(ospite_id) \
+FROM paganti\
+where ospite_id IS NOT NULL\
 }
