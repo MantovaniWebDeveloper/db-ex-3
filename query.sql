@@ -36,4 +36,12 @@ WHERE name LIKE "D%"\
 \cf0 /*
 \f1\fs37\fsmilli18667 \cf2 \expnd0\expndtw0\kerning0
 \outl0\strokewidth0 \strokec2 Calcola il totale degli ordini accepted
-\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 */}
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 */\
+\
+SELECT  COUNT(status)\
+FROM pagamenti\
+where status = "accepted"\
+\
+SELECT  MAX(price)\
+FROM pagamenti\
+}
