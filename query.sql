@@ -54,4 +54,7 @@ and date_of_birth = "1975"\
 SELECT count(ospite_id) \
 FROM paganti\
 where ospite_id IS NOT NULL\
+\
+SELECT SUM(beds)\
+FROM stanze\
 }
